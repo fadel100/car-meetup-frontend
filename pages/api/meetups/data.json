@@ -1,0 +1,76 @@
+{
+  "meetups": [
+    {
+      "id": "1",
+      "name": "Toyota cars meetup",
+      "slug": "toyota-cars-meetup",
+      "city": "Beirut",
+      "address": "ras el nabe3, near the church",
+      "carBrand": "Toyota",
+      "date": "June 09, 2021",
+      "time": "10:00 PM EST",
+      "description": "a meetup Toyata car/suv owners ex: Fj cruisers",
+      "image": "/images/sample/meetup1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Nissan cars meetup",
+      "slug": "nissan-cars-meetup",
+      "city": "Jounieh",
+      "address": "awal mafra2",
+      "carBrand": "Nissan",
+      "date": "June 2, 2021",
+      "time": "8:00 PM EST",
+      "description": "a meetup for sport cars like gtr's",
+      "image": "/images/sample/meetup2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "mercedez car meetup",
+      "slug": "mercedez-car-meetup",
+      "city": "saida",
+      "address": "tene mafra2",
+      "carBrand": "Mercedez Benz",
+      "date": "June 11, 2021",
+      "time": "7:00 PM EST",
+      "description": "a palce where amg car owners can meet",
+      "image": "/images/sample/meetup3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "BMW car meetup",
+      "slug": "bmw-car-meetup",
+      "city": "tripoli",
+      "address": "telet mafra2",
+      "carBrand": "BMW",
+      "date": "June 20, 2021",
+      "time": "10:00 PM EST",
+      "description": "show your m3/5 to the fans",
+      "image": "/images/sample/meetup4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Cadillac car meetup",
+      "slug": "cadillac car meetup",
+      "city": "jbeil",
+      "address": "awal tal3a",
+      "carBrand": "Cadillac",
+      "date": "June 30, 2021",
+      "time": "8:00 PM EST",
+      "description": "bring your fragile american car and show it to the world",
+      "image": "/images/sample/meetup5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Infinity car meetup",
+      "slug": "infinity-car-meetup",
+      "city": "Beirut",
+      "address": "honik",
+      "carBrand": "Infinity",
+      "date": "July 2, 2021",
+      "time": "8:00 PM EST",
+      "description": "people wanna see your fx35",
+      "image": "/images/sample/meetup6.jpg"
+    }
+  ]
+}
