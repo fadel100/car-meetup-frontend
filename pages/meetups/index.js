@@ -16,7 +16,7 @@ export default function MeetupsPage({ meetups }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/meetups`);
+  const res = await fetch(`${API_URL}/meetups?_sort=date:ASC`);
   const meetups = await res.json();
 
   return {

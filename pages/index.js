@@ -25,11 +25,11 @@ export default function HomePage({ meetups }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/meetups`);
+  const res = await fetch(`${API_URL}/meetups?_sort=date:ASC&_limit=3`);
   const meetups = await res.json();
 
   return {
-    props: { meetups: meetups.slice(0, 3) },
+    props: { meetups },
     revalidate: 1,
   };
 }

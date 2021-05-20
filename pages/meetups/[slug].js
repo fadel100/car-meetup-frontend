@@ -24,12 +24,16 @@ export default function MeetupPage({ mtp }) {
         </div>
 
         <span>
-          {mtp.date} at {mtp.time}
+          {new Date(mtp.date).toLocaleDateString("en-US")} at {mtp.time}
         </span>
         <h1 className="text-xl font-bold my-3">{mtp.name}</h1>
         {mtp.image && (
           <div className="mb-5">
-            <Image src={mtp.image} width={960} height={600} />
+            <Image
+              src={mtp.image.formats.medium.url}
+              width={960}
+              height={600}
+            />
           </div>
         )}
 
@@ -51,7 +55,7 @@ export default function MeetupPage({ mtp }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`${API_URL}/api/meetups`);
+  const res = await fetch(`${API_URL}/meetups`);
   const meetups = await res.json();
 
   const paths = meetups.map((mtp) => ({
@@ -65,7 +69,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const res = await fetch(`${API_URL}/api/meetups/${slug}`);
+  const res = await fetch(`${API_URL}/meetups?slug=${slug}`);
   const meetups = await res.json();
 
   return {
