@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Search from "@/components/Search";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
           <a className="text-red-500 hover:text-black md:mr-5">car meetups</a>
         </Link>
       </div>
-
+      <Search />
       <nav>
         <ul className="flex flex-col md:flex-row text-center md:text-left  items-center justify-center list-none mt-5 md:mt-0 ">
           <li>

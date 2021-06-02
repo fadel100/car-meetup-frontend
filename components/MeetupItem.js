@@ -26,9 +26,7 @@ export default function MeetupItem({ mtp }) {
       </div>
 
       <div className="inline-block bg-red-600 text-white py-3 px-5 cursor-pointer rounded hover:opacity-80">
-        <Link href={`/meetups/${mtp.slug}`}>
-          <a className="btn">Details</a>
-        </Link>
+        <Link href={`/meetups/${mtp.slug}`}>Details</Link>
       </div>
     </div>
   );
